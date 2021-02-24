@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 import './styles/main.scss';
+import {Calculator} from './tempCalc';
 
 class Clock extends React.Component {
 
@@ -87,6 +88,6 @@ function Welcome(props) {
   }
 
   ReactDOM.render(
-    <FlavorForm/>,
+    <Calculator/>,
     document.getElementById('root')
   );
