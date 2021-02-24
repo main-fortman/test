@@ -1,5 +1,5 @@
 import React from 'react';
-import * as utils from './utils/utils';
+import * as utils from '../utils/utils';
 
 const scaleNames = {
   c: 'Цельсия',

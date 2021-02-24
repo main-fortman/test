@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 import './styles/main.scss';
-import {Calculator} from './tempCalc';
+import {Calculator} from './examples/tempCalc';
+import {TestState} from './examples/testHooks';
 
 class Clock extends React.Component {
 
@@ -88,6 +89,6 @@ function Welcome(props) {
   }
 
   ReactDOM.render(
-    <Calculator/>,
+    <TestState/>,
     document.getElementById('root')
   );
