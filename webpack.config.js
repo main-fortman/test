@@ -3,7 +3,9 @@ const HtmlPlugin = require('html-webpack-plugin');
 const webpack = require('webpack')
 
 module.exports = {
+    context: path.resolve(__dirname, 'src'),
     mode: 'development',
+    devtool: 'source-map',
     devServer: {
         historyApiFallback: true,
         contentBase: path.resolve(__dirname, './dist'),
@@ -13,7 +15,7 @@ module.exports = {
         port: 8080,
     },
     entry: {
-        main: path.resolve(__dirname, "./src/index_react.js"),
+        main: "./index_react.js",
     },
     output: {
         path: path.resolve(__dirname, './dist'),

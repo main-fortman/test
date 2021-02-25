@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import './styles/main.scss';
 import {Calculator} from './examples/tempCalc';
 import {TestState} from './examples/testHooks';
+import { AppContext } from './examples/context/app-context';
 
 class Clock extends React.Component {
 
@@ -89,6 +90,6 @@ function Welcome(props) {
   }
 
   ReactDOM.render(
-    <TestState/>,
+    <AppContext/>,
     document.getElementById('root')
   );
